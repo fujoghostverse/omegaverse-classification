@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Omegaverse evreninde ikincil cinsiyetin ne? 20 soruluk kişilik testini çöz, sınıflandırmanı keşfet.">
+
+    <meta name="theme-color" content="#0B192B">
+
+    <link rel="icon" href="assets/fujoghost-icon.jpg" type="image/jpeg">
+
+    <title>Omegaverse Sınıflandırma Testi | FUJOGHOSTVERSE</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <a href="#" class="brand" aria-label="FUJOGHOST Ana Sayfa">
+            <img src="assets/fujoghost-logo.png" alt="FUJOGHOST">
+        </a>
+    </header>
+
+    <main id="app">
+
+        <!-- ANA SAYFA -->
+        <section id="home-section" class="hero-section">
+
+            <div class="character-gallery">
+                <img
+                    src="assets/characters-banner.jpg"
+                    alt="Omegaverse evreninden altı gizemli karakter"
+                    fetchpriority="high"
+                >
+            </div>
+
+            <div class="intro-section">
+
+                <h1>
+                    OMEGAVERSE EVRENİNDE
+                    <span>İKİNCİL CİNSİYETİN NE?</span>
+                </h1>
+
+                <p class="intro-text">
+                    İçgüdülerini, kişiliğini ve ilişkilerini keşfet.
+                    20 soruluk testi tamamla ve hangi sınıflandırmaya
+                    ait olduğunu öğren.
+                </p>
+
+                <button id="start-btn" type="button" class="start-button">
+                    TESTE BAŞLA
+                </button>
+
+                <p class="test-info">20 SORU · 6 OLASI SONUÇ</p>
+
+            </div>
+
+        </section>
+
+        <!-- TEST EKRANI -->
+        <section id="quiz-section" class="quiz-section" hidden>
+
+            <div class="quiz-header">
+                <div class="quiz-meta">
+                    <p id="section-label" class="section-label"></p>
+                    <p id="question-counter" class="question-counter">Soru 1 / 20</p>
+                </div>
+
+                <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-label="Test ilerlemesi"
+                    aria-valuemin="0"
+                    aria-valuemax="20"
+                    aria-valuenow="0"
+                    id="progress-bar"
+                >
+                    <div id="progress-fill" class="progress-fill"></div>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <h2 id="question-text" class="question-text"></h2>
+
+                <div
+                    id="options-list"
+                    class="options-list"
+                    role="radiogroup"
+                    aria-label="Cevap seçenekleri"
+                ></div>
+            </div>
+
+            <div class="quiz-navigation">
+                <button
+                    id="prev-btn"
+                    type="button"
+                    class="nav-button"
+                    disabled
+                >
+                    GERİ
+                </button>
+
+                <button
+                    id="next-btn"
+                    type="button"
+                    class="primary-button"
+                    disabled
+                >
+                    SONRAKİ SORU
+                </button>
+            </div>
+
+        </section>
+
+        <!-- SONUÇ EKRANI -->
+        <section id="result-section" class="result-section" hidden>
+
+            <p class="section-label">FUJOGHOSTVERSE CLASSIFICATION</p>
+
+            <h2 class="result-heading">İKİNCİL CİNSİYETİN</h2>
+
+            <div class="result-card">
+                <img
+                    id="result-image"
+                    src=""
+                    alt=""
+                    class="result-image"
+                >
+
+                <h3 id="result-name" class="result-name"></h3>
+
+                <p id="result-description" class="result-description"></p>
+            </div>
+
+            <div class="why-result-card">
+                <h3 id="why-result-heading" class="why-result-heading"></h3>
+                <p id="why-result-text" class="why-result-text"></p>
+            </div>
+
+            <button
+                id="restart-btn"
+                type="button"
+                class="start-button"
+            >
+                TESTİ YENİDEN ÇÖZ
+            </button>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 FUJOGHOSTVERSE. TÜM HAKLARI SAKLIDIR.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
